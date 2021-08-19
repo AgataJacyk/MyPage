@@ -1,0 +1,142 @@
+a {
+    color: #7BAEBF;
+    padding: 0 1rem;
+}
+
+body {
+    background-image: url("images/back.png");
+    background-repeat: repeat;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    width: hv;
+}
+
+h1 {
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+h2 {
+    font-family: 'Dawning of a New Day', cursive;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+h3 {
+    color: #7BaEBF;
+    font-size: 15px;
+}
+
+i {
+    color: #7BAEBF;
+}
+
+p {
+    color: #476072;
+}
+
+/* Classes */
+
+.bottom_container {
+    background-color: #A0D7EA;
+    border-top: 2px solid #7BAEBF;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.col-3 {
+    border-right: 1px solid #7BAEBF;
+}
+
+.container-sm {
+    padding: 10% 0%;
+}
+
+.left {
+    text-align: left;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-color {
+    background-color: #A0D7EA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding-left: 1rem;
+}
+
+.navbar-items {
+    justify-content: end;
+}
+
+.projects {
+width: 100%;
+margin-bottom: 5%;
+}
+
+.right {
+    text-align: right;
+}
+
+.welcome {
+    position: relative;
+    right: 50%;
+    top: 150px;
+    text-align: right;
+    z-index: 2;
+}
+
+/* Ids */
+
+#about_img {
+    width: 30%;
+}
+
+#backpack_img {
+    opacity: 80%;
+    width: 15%;
+}
+
+#blueshape {
+    position: relative;
+    bottom: 30%;
+    right: 10%;
+    opacity: 80%;
+}
+
+#books {
+    position: relative;
+    padding-top: 60%;
+    width: 60%;
+}
+
+#contact_img {
+    width: 80%;
+}
+
+#pc_img {
+    float: right;
+    width: 10%;
+}
+
+#pencil_img {
+    float: left;
+    opacity: 90%;
+    width: 7%;
+}
+
+#welcome_photo {
+    position: relative;
+    bottom: 60%;
+    left: 20%;
+    z-index: 1;
+}
