@@ -1,12 +1,15 @@
 a {
     color: #7BAEBF;
     padding: 0 1rem;
+    text-align: end;
+    text-transform: uppercase;
 }
 
 body {
     background-image: url("images/back.png");
+    background-attachment: fixed;
+    background-color: transparent;
     background-repeat: repeat;
-    background-color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     width: hv;
@@ -37,6 +40,13 @@ p {
 
 /* Classes */
 
+.background {
+    background-image: url(images/back.png);
+    background-color: #F9F9F9;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
 .bottom_container {
     background-color: #A0D7EA;
     border-top: 2px solid #7BAEBF;
@@ -55,6 +65,7 @@ p {
 
 .container-sm {
     padding: 10% 0%;
+    width: 60%;
 }
 
 .left {
@@ -65,17 +76,11 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.navbar-color {
     background-color: #A0D7EA;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     padding-left: 1rem;
-}
-
-.navbar-items {
-    justify-content: end;
+    z-index: 2;
 }
 
 .projects {
@@ -83,16 +88,17 @@ width: 100%;
 margin-bottom: 5%;
 }
 
-.right {
-    text-align: right;
+.skill_row {
+    padding-left: 25%;
+    width: 90%;
 }
 
 .welcome {
     position: relative;
     right: 50%;
-    top: 150px;
+    top:150px;
     text-align: right;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* Ids */
@@ -103,20 +109,23 @@ margin-bottom: 5%;
 
 #backpack_img {
     opacity: 80%;
-    width: 15%;
+    padding: 60% 0 0 60%;
+    position: relative;
+    width: 150%;
 }
 
 #blueshape {
-    position: relative;
-    bottom: 30%;
-    right: 10%;
+    margin: 0%;
     opacity: 80%;
+    width: 90%;
+    z-index: 0;
 }
 
 #books {
     position: relative;
-    padding-top: 60%;
-    width: 60%;
+    padding-top: 80%;
+    padding-left: 50%;
+    width: 130%;
 }
 
 #contact_img {
@@ -124,19 +133,10 @@ margin-bottom: 5%;
 }
 
 #pc_img {
-    float: right;
-    width: 10%;
+    width: 120%;
 }
 
 #pencil_img {
-    float: left;
     opacity: 90%;
-    width: 7%;
-}
-
-#welcome_photo {
-    position: relative;
-    bottom: 60%;
-    left: 20%;
-    z-index: 1;
+    width: 100%;
 }
