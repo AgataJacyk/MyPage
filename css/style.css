@@ -79,6 +79,11 @@ p {
     text-align: left;
 }
 
+.mobile {
+    height: 9rem;
+    margin: 15% 0;
+    }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -92,7 +97,7 @@ p {
 
 .projects {
 width: 100%;
-margin-bottom: 5%;
+margin-bottom: 15%;
 }
 
 .projects_art {
