@@ -8,26 +8,25 @@ a {
 
 b {
     color: #7BAEBF;
-    font-size: 10px;
+    font-size: calc(10px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
     text-transform: uppercase;
 }
 
 body {
-    background-image: url("images/back.png");
-    background-attachment: fixed;
-    background-color: transparent;
-    background-repeat: repeat;
+    background-color: #F9F9F9;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
     width: hv;
 }
 
 h1 {
     font-family: 'Dawning of a New Day', cursive;
+    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h2 {
     font-family: 'Dawning of a New Day', cursive;
+    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
     margin-bottom: 3%;
     text-align: center;
 }
@@ -47,12 +46,6 @@ p {
 
 /* Classes */
 
-.background {
-    background-image: url(images/back.png);
-    background-color: #F9F9F9;
-    background-attachment: fixed;
-    background-repeat: repeat;
-}
 
 .bottom_container {
     background-color: #A0D7EA;
@@ -77,6 +70,11 @@ p {
 
 .left {
     text-align: left;
+}
+
+.middle_container {
+    background-color: #F9F9F970;
+
 }
 
 .mobile {
@@ -112,9 +110,9 @@ margin-bottom: 15%;
 }
 
 .welcome {
-    position: relative;
-    right: 50%;
-    top:150px;
+    position: sticky;
+    top:30%;
+    margin-right: 50%;
     text-align: right;
     z-index: 1;
 }
