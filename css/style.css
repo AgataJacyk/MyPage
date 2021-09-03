@@ -1,47 +1,51 @@
-a {
+a,
+b {
     color: #7BAEBF;
-    padding: 0 1rem;
-    text-align: end;
+    font-size: calc(9px + (10 - 9) * ((100vw - 300px) / (1600 - 300)));
+    padding: 1rem;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-b {
-    color: #7BAEBF;
-    font-size: calc(10px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
-    text-transform: uppercase;
-}
 
 body {
+    background-image: url("../images/backdropimg.jpeg");
     background-color: #F9F9F9;
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
-    width: hv;
+    text-align: center;
+}
+
+.col-lg-3 {
+    text-align: right;
+}
+
+h1,
+h2 {
+    font-family: 'Dawning of a New Day', cursive;
 }
 
 h1 {
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(20px + (48 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h2 {
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(20px + (42 - 20) * ((100vw - 300px) / (1600 - 300)));
     margin-bottom: 3%;
-    text-align: center;
 }
 
 h3 {
     color: #7BaEBF;
-    font-size: 15px;
+    font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
 
 i {
     color: #7BAEBF;
 }
 
-p {
+p,
+h4 {
     color: #476072;
+    font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /* Classes */
@@ -55,12 +59,17 @@ p {
     width: 100%;
 }
 
-.center {
-    text-align: center;
+.contact_img {
+    width: 110%;
 }
 
-.col-3, .col-4 {
+.col-3,
+.col-4 {
     border-right: 1px solid #7BAEBF;
+}
+
+.col-7 {
+    text-align: left;
 }
 
 .container-sm {
@@ -68,8 +77,9 @@ p {
     width: 60%;
 }
 
-.left {
+.left_align_img {
     text-align: left;
+    width: 80%;
 }
 
 .middle_container {
@@ -80,7 +90,7 @@ p {
 .mobile {
     height: 9rem;
     margin: 15% 0;
-    }
+}
 
 .navbar {
     position: fixed;
@@ -94,24 +104,29 @@ p {
 }
 
 .projects {
-width: 100%;
-margin-bottom: 15%;
+    width: 100%;
+    margin-bottom: 15%;
 }
 
 .projects_art {
     width: 100%;
     height: 9rem;
     margin-bottom: 5%;
-    }
+}
 
 .skill_row {
     padding-left: 25%;
     width: 90%;
 }
 
+#skills div.col-4 {
+    border-right: none;
+    text-align: left;
+}
+
 .welcome {
     position: sticky;
-    top:30%;
+    top: 30%;
     margin-right: 50%;
     text-align: right;
     z-index: 1;
@@ -130,6 +145,7 @@ margin-bottom: 15%;
     width: 110%;
 }
 
+
 #blueshape {
     margin: 0%;
     opacity: 80%;
@@ -144,8 +160,8 @@ margin-bottom: 15%;
     width: 130%;
 }
 
-#contact_img {
-    width: 80%;
+div#contact :first-child {
+    text-align: left;
 }
 
 #pc_img {
@@ -155,4 +171,83 @@ margin-bottom: 15%;
 #pencil_img {
     opacity: 90%;
     width: 100%;
+}
+
+/* Phone & tablet size */
+@media (max-width: 900px) {
+    #backpack_img {
+        display: none;
+    }
+
+    #blueshape {
+        margin: 0%;
+        opacity: 80%;
+        width: 110%;
+        z-index: 0;
+    }
+
+    #books {
+        position: relative;
+        padding-top: 80%;
+        padding-left: 0%;
+        width: 90%;
+    }
+
+    .contact_img {
+        width: 90%;
+    }
+
+    col-sm-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        text-align: right;
+        margin: 0%;
+        padding-left: 10%;
+        width: 40%;
+    }
+
+    .col-sm-6 {
+        text-align: right;
+        padding-top: 15%;
+        margin: 0%;
+        width: 50%;
+    }
+
+    .col-8 {
+        width: 56%;
+    }
+
+    .container-sm {
+        width: 100%;
+    }
+
+    div.col-sm-6 :first-child {
+        text-align: left;
+    }
+
+    .left_align_img {
+        text-align: left;
+        width: 40%;
+    }
+
+    .middle_container {
+        background-color: #F9F9F970;
+        padding: 15% 7%;
+    }
+
+    #pc_img,
+    #pencil_img {
+        opacity: 90%;
+        padding-top: 50%;
+        width: 70%;
+    }
+
+    .skill_row {
+        padding-left: 3%;
+        width: 110%;
+    }
+
+
 }
