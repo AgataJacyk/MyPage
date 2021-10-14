@@ -1,12 +1,23 @@
-a,
-b {
-    color: #7BAEBF;
+a, b{
     font-size: calc(9px + (10 - 9) * ((100vw - 300px) / (1600 - 300)));
-    padding: 1rem;
     text-transform: uppercase;
     text-decoration: none;
 }
 
+a, b, i, h3 {
+    color: #7BAEBF;
+}
+
+a.nav-link {
+    color: #000000;
+    font-size: calc(9px + (10 - 9) * ((100vw - 300px) / (1600 - 300)));
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#about_img {
+    width: 50%;
+}
 
 body {
     background-image: url("../images/backdropimg.jpeg");
@@ -15,127 +26,20 @@ body {
     text-align: center;
 }
 
-.col-lg-3 {
-    text-align: right;
-}
-
-h1,
-h2 {
-    font-family: 'Dawning of a New Day', cursive;
-}
-
-h1 {
-    font-size: calc(20px + (48 - 20) * ((100vw - 300px) / (1600 - 300)));
-}
-
-h2 {
-    font-size: calc(20px + (42 - 20) * ((100vw - 300px) / (1600 - 300)));
-    margin-bottom: 3%;
-}
-
-h3 {
-    color: #7BaEBF;
-    font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1600 - 300)));
-}
-
-i {
-    color: #7BAEBF;
-}
-
-p,
-h4 {
-    color: #476072;
-    font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
-}
-
-/* Classes */
-
-
 .bottom_container {
     background-color: #A0D7EA;
     border-top: 2px solid #7BAEBF;
     text-align: center;
     padding: 30px 0;
+}
+
+.bottom_container,
+.navbar,
+.projects,
+.projects_art,
+#pencil_img
+  {
     width: 100%;
-}
-
-.contact_img {
-    width: 110%;
-}
-
-.col-3,
-.col-4 {
-    border-right: 1px solid #7BAEBF;
-}
-
-.col-7 {
-    text-align: left;
-}
-
-.container-sm {
-    padding: 10% 0%;
-    width: 60%;
-}
-
-.left_align_img {
-    text-align: left;
-    width: 80%;
-}
-
-.middle_container {
-    background-color: #F9F9F970;
-
-}
-
-.mobile {
-    height: 9rem;
-    margin: 15% 0;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #A0D7EA;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    padding-left: 1rem;
-    z-index: 2;
-}
-
-.projects {
-    width: 100%;
-    margin-bottom: 15%;
-}
-
-.projects_art {
-    width: 100%;
-    height: 9rem;
-    margin-bottom: 5%;
-}
-
-.skill_row {
-    padding-left: 25%;
-    width: 90%;
-}
-
-#skills div.col-4 {
-    border-right: none;
-    text-align: left;
-}
-
-.welcome {
-    position: sticky;
-    top: 30%;
-    margin-right: 50%;
-    text-align: right;
-    z-index: 1;
-}
-
-/* Ids */
-
-#about_img {
-    width: 50%;
 }
 
 #backpack_img {
@@ -160,8 +64,88 @@ h4 {
     width: 130%;
 }
 
-div#contact :first-child {
+.col-3,
+.col-4 {
+    border-right: 1px solid #7BAEBF;
+}
+
+.col-lg-3 {
+    text-align: right;
+}
+.col-7, 
+.left_align_img, 
+#skills div.col-4, 
+div#contact :first-child{
     text-align: left;
+}
+
+.container-sm {
+    padding: 10% 0%;
+    width: 60%;
+}
+
+.contact_img {
+    width: 110%;
+}
+
+h1,
+h2 {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: calc(20px + (48 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h2 {
+    margin-bottom: 3%;
+}
+
+h3 {
+    font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h4, p {
+    color: #476072;
+    font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.left_align_img {
+    width: 80%;
+}
+
+.middle_container {
+    background-color: #F9F9F970;
+
+}
+
+.mobile {
+    height: 9rem;
+    margin: 15% 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: #A0D7EA;
+    box-shadow: 0 0 10px 0 #0000004d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding-left: 1rem;
+    z-index: 2;
+}
+
+.navbar-brand{
+    border-radius: 55%;
+    box-shadow:  0 6px 20px 0 #7BaEBF;
+    width: 3rem;
+    height: 3rem;
+}
+
+.projects {
+    margin-bottom: 15%;
+}
+
+.projects_art {
+    height: 9rem;
+    margin-bottom: 5%;
 }
 
 #pc_img {
@@ -170,12 +154,28 @@ div#contact :first-child {
 
 #pencil_img {
     opacity: 90%;
-    width: 100%;
+}
+
+.skill_row {
+    padding-left: 25%;
+    width: 90%;
+}
+
+#skills div.col-4 {
+    border-right: none;
+}
+
+.welcome {
+    position: sticky;
+    top: 30%;
+    margin-right: 50%;
+    text-align: right;
+    z-index: 1;
 }
 
 /* Phone & tablet size */
-@media (max-width: 900px) {
-    #backpack_img {
+@media (max-width: 1030px) {
+    #backpack_img{
         display: none;
     }
 
@@ -190,14 +190,13 @@ div#contact :first-child {
         position: relative;
         padding-top: 80%;
         padding-left: 0%;
+    }
+
+    .contact_img, #books {
         width: 90%;
     }
 
-    .contact_img {
-        width: 90%;
-    }
-
-    col-sm-3 {
+    .col-sm-3 {
         width: 25%;
     }
 
@@ -208,7 +207,7 @@ div#contact :first-child {
         width: 40%;
     }
 
-    .col-sm-6 {
+    .contact {
         text-align: right;
         padding-top: 15%;
         margin: 0%;
@@ -223,12 +222,12 @@ div#contact :first-child {
         width: 100%;
     }
 
-    div.col-sm-6 :first-child {
+    .contact :first-child, 
+    .left_align_img {
         text-align: left;
     }
 
     .left_align_img {
-        text-align: left;
         width: 40%;
     }
 
@@ -238,16 +237,12 @@ div#contact :first-child {
     }
 
     #pc_img,
-    #pencil_img {
-        opacity: 90%;
-        padding-top: 50%;
-        width: 70%;
+    #pencil_img{
+        width: 8rem;
     }
 
     .skill_row {
         padding-left: 3%;
         width: 110%;
     }
-
-
 }
