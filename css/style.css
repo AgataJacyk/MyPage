@@ -106,6 +106,12 @@ h4, p {
     color: #476072;
     font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
 }
+i.nav_git, i.nav_linked {
+    font-size: 15px;
+    position: relative;
+    top: 15%;
+    margin: 0.5rem;
+}
 
 .left_align_img {
     width: 80%;
